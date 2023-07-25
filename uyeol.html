@@ -1,0 +1,130 @@
+
+ <title>üye ol sadece instagramla giriş yap</title>
+
+
+
+
+
+
+
+
+ </style>
+</head>
+<body>
+  <div class="giris-formu">
+    <h2>Giriş Yap</h2>
+    <form>
+      <label for="kullanici-adi">Kullanıcı Adı:</label>
+      <input type="text" id="kullanici-adi" name="kullanici-adi">
+      
+      <label for="sifre">Şifre:</label>
+      <input type="password" id="sifre" name="sifre">
+      
+      <input type="button" value="Giriş Yap" onclick="girisYap()">
+    </form>
+  </div>
+
+  <script>
+    function girisYap() {
+      var kullaniciAdi = document.getElementById("kullanici-adi").value; 
+          var sifre = document.getElementById("sifre").value;
+
+      // Giriş işlemleri burada yapılır
+      // Örneğin, kullanıcı adı ve şifre doğrulaması
+      
+      if (kullaniciAdi === "gecesohbeti" && sifre === "gecesohbeti") {
+        // Giriş başarılıysa ana sayfaya yönlendir
+        window.location.href = "http://192.168.92.1/dashboard/instagram/";
+      } else {
+        alert("Kullanıcı adı veya şifre yanlış!");
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Instagram Benzeri Arka Plan</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: linear-gradient(to right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    }
+    .content {
+      max-width: 600px;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .title {
+      text-align: center;
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .description {
+      text-align: center;
+      font-size: 16px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1 class="title">Instagram</h1>
+      <p class="description">Sosyal Medya Platformu</p>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
